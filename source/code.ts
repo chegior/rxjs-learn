@@ -1,3 +1,12 @@
-import * as Rx from "rxjs";
+import { Observable, observable } from "rxjs";
 
-console.log("Everything is working \n"+Rx);
+
+//you could use function subscribe(){}
+var observable$ = Observable.create((observer:any)=>{
+    observer.next("Value been emited");
+});
+
+observable$
+    .subscribe( (arg:any) => {
+        console.log(arg); 
+    });
