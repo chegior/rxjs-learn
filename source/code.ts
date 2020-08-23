@@ -8,5 +8,18 @@ var observable$ = Observable.create((observer:any)=>{
 
 observable$
     .subscribe( (arg:any) => {
-        console.log(arg); 
+        addItem(arg);
     });
+
+
+// This is vanilla JS to add a List element to the UL 
+function addItem(val:any){
+
+    var node = document.createElement("li");
+    var text_node = document.createTextNode(val);
+
+    node.appendChild(text_node);
+
+    document.getElementById('output').appendChild(node);
+}
+

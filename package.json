@@ -1,7 +1,7 @@
 {
   "name": "rxjs-learn",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "index.html",
   "license": "MIT",
   "scripts":{
     "start":"webpack-dev-server --mode development"
